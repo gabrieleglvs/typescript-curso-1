@@ -16,6 +16,7 @@ export class NegociacaoController {
     adiciona(): void {
         const negociacao = this.criaNegociacao()
         this.negociacoes.adiciona(negociacao)
+        negociacao.data.setDate(12); ("o método setDate me permite acessar mesmo sendo private")
         this.negociacoes.lista();
         console.log(this.negociacoes.lista());
         this.limparFormulario();
