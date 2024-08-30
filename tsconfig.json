@@ -1,0 +1,13 @@
+{
+    //onde vai gravar arquivos compilados
+    "compilerOptions": {
+        "outDir": "dist/js",
+        "target": "ES6",
+        "noEmitOnError": true,
+        "noImplicitAny": true
+    },
+    "include": [
+        //pasta app/toda subpasta/qualquer arquivo
+        "app/**/*"
+    ]
+}
